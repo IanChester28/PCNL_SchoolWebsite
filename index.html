@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>School Website - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background: linear-gradient(135deg, #4a90e2, #ffffff);
+      color: #1f3d58;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .navbar {
+      background-color: #003366;
+      border-bottom: 3px solid #ffffff;
+    }
+
+    .navbar-brand img {
+      height: 60px;
+      width: auto;
+      background-color: white;
+      padding: 5px;
+      border-radius: 8px;
+    }
+
+    .navbar-nav .nav-link {
+      color: white !important;
+      font-weight: 600;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #4a90e2 !important;
+    }
+
+    .hero {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      padding: 100px 20px 60px;
+      background: rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+    }
+
+    .hero h1 {
+      font-weight: 700;
+      font-size: 3.5rem;
+      margin-bottom: 1.5rem;
+      color: #003366;
+      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+      color: #003366;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-primary {
+      background-color: #4a90e2;
+      border: none;
+      color: white;
+      font-weight: bold;
+      padding: 12px 30px;
+      border-radius: 25px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      background-color: #357ABD;
+    }
+
+    .section {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .section:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .section h2 {
+      color: #003366;
+      margin-bottom: 15px;
+      font-size: 2rem;
+      text-align: left;
+    }
+
+    .section p {
+      font-size: 1.2rem;
+      color: #1f3d58;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px 10px;
+      background: #003366;
+      font-size: 1rem;
+      color: white;
+      margin-top: 30px;
+    }
+
+    .announcement-box {
+      animation: fadeInUp 1s ease-out;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero p {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark px-4">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="PCNLlogo.jpg" alt="School Logo" />
+        <span class="ms-2 fs-4 fw-bold">PCNL</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="hero container">
+    <h1>Welcome to Philippine College of Northwestern Luzon</h1>
+    <p>Empowering students today for a brighter tomorrow.</p>
+    <a href="course.html" class="btn btn-primary mb-4">Explore Courses</a>
+  </main>
+
+  <section class="container section">
+    <h2>Welcome to PCNL</h2>
+    <p> At PCNL, we are committed to shaping a better future through innovation, flexibility, and collaboration. Recognized for our progressive approach to education,
+       we partner with students, stakeholders, and the community to foster a just society and a sustainable economy.</p>
+  </section>
+
+  <section class="container section">
+    <h2>Welcome to PCNL</h2>
+    <p>Philippine College of Northwestern Luzon stands as a beacon of quality education and social responsibility. Guided by our mission, we deliver advanced instruction in diverse fields, pursue meaningful research,
+      and actively engage in community development to uplift lives and inspire change.</p>
+  </section>
+
+
+<section class="container section">
+        <h2 class="fw-bold text-primary mb-2 text-start">📢 Announcement :</h2><br>
+        <div class="container">
+        <div class="col-sm-6 col-md-8 col-lg-8">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <img src="bsce.jpg" alt="" class="img-thumbnail img-responsive">
+                  <h3>Bachelor of Science Civil Engineering available on July 14,2025</h3>
+                  <p>This is the new course offering from Philippine College of Northwestern Luzon and its available on July 14,2025 S.Y. 2025-2026</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <img src="announcement.jpg" alt="" class="img-thumbnail img-responsive">
+                  <h3>Seminar</h3>
+                  <p>On April 4, 2025, the BSIT students from 1st year to 3rd year of the Philippine College of Northwestern Luzon (PCNL) participated in a seminar-workshop on Web Development with the theme
+                    “Building your online world: Domain, Hosting, and WordPress”, held at the PCNL Library.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <div class="panel panel-default">
+                <article class="panel-body">
+                  <img src="dinengdeng.jpg" alt="" class="img-thumbnail img-responsive">
+                  <p class="text-muted">Drone Shot By <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Ronan Muli | <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> 5/1/2025</p>
+                  <h3>Dinengdeng Festival</h3>
+                  <p>Students, faculty, and staff of the Philippine College of Northwestern Luzon (PCNL) proudly showcased their creativity and school spirit during the grand civic parade held for the opening of the 20th Dinengdeng Festival in Agoo, La Union. The event, which kicked off at 5 PM, brought together a vibrant display of culture and artistry, as PCNL joined other schools PCNL’s float adorned with eye-catching decorations and elements inspired by local heritage, highlighted the talents and unity of its academic community. Their participation not only reflected the institution’s creative spirit but also contributed to the festive atmosphere that marked the beginning of Agoo’s much-anticipated annual event.
+                    Courtesy of Sir Byron Rivera
+                    Photos by | Christian Joseph Parrocha, Angelo Gale, Arc Ulat, Jhezzarie Ganaden, Jhe Ann Valdez, John Kenneth Adonis, Jerwel Lee Trinidad, Rai Gallano
+                    Drone Shot | Ronan Muli</p>
+                </article>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <div class="panel panel-default">
+                <article class="panel-body">
+                  <img src="president.jpg" alt="" class="img-thumbnail img-responsive">
+                  <p class="text-muted">To <span class="glyphicon glyphicon-user" aria-hidden="true">President Vicente D. Ching</span>  | <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> 4/11/2025</p>
+                  <h3>President's Birthday</h3>
+                  <p style="text-align: left;">To our dedicated and diligent School President, Atty. Vicente D. Ching, from PEN family and on behalf of the PCNLians, we wish you a Happy Birthday! 🎉🎊
+                    May this day be filled with blessings and happiness!! 🙏 Cheers to more years of leadership and inspiration! 🥂</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+</section>
+
+
+  <footer>&copy; 2025 PCNL. All rights reserved.
+    <a href="https://www.facebook.com/PCNLOFFICIAL" target="_blank">
+      <i class="fab fa-facebook"></i>
+    </a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

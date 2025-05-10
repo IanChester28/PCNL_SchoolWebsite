@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us - PCNL</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #4a90e2, #ffffff); 
+      color: #1f3d58;
+      font-family: 'Poppins', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .navbar {
+      background-color: #003366; 
+      border-bottom: 3px solid #ffffff;
+    }
+
+    .navbar-brand img {
+      height: 60px;
+      width: auto;
+      background-color: white;
+      padding: 5px;
+      border-radius: 8px;
+    }
+
+    .navbar-nav .nav-link {
+      color: white !important;
+      font-weight: 600;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #4a90e2 !important;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      padding: 120px 20px 60px;
+      background: rgba(0, 0, 0, 0.1); 
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      margin-bottom: 50px;
+    }
+
+    .hero h1 {
+      font-weight: 700;
+      font-size: 3.5rem;
+      color: #003366;
+      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      color: #003366;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-primary {
+      background-color: #4a90e2;
+      border: none;
+      color: white;
+      font-weight: bold;
+      padding: 12px 30px;
+      border-radius: 25px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      background-color: #357ABD;
+    }
+
+    .section {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 12px;
+      padding: 40px 20px;
+      margin-bottom: 50px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .section:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .section h2 {
+      color: #003366;
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .section p {
+      font-size: 1.2rem;
+      color: #1f3d58;
+      text-align: center;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 15px 10px;
+      background: #003366;
+      font-size: 1rem;
+      color: white;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .section h2 {
+        font-size: 2rem;
+      }
+
+      .section p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark px-4">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="PCNLlogo.jpg" alt="School Logo" />
+        <span class="ms-2 fs-4 fw-bold">PCNL</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+             <a class="nav-link" href="index.html">Home</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero container">
+    <h1>Welcome to PCNL</h1>
+    <p>Our school is dedicated to fostering an environment of academic excellence and innovation.</p>
+  </section>
+    
+  <section class="container section">
+    <h2>Vision</h2>
+    <p>To be a distinct learning institution acknowledge far and wide for its innovative and flexible approaches in working with its students, stakeholders, and community to create a more just and humane society and a more sustainable economy.</p>
+  </section>
+
+  <section class="container section">
+    <h2>Mission</h2>
+    <p>In support of it's philosophy, PCNL mandates itself to provide advance quality instruction to it's clientele in education, the sciences, technology, business and other related professional and technical fields; promote the advancement of knowledge through research; and 
+      help improve the quality of community life through extension work.</p>
+  </section>
+
+     <section class="container section">
+    <h2>Philosophy</h2>
+    <p>
+The Philippine College of Northwestern Luzon believes and advocates the development of man's vast potentials which, given the appropriate quality education and provided with a stimulating and nurturing environment, 
+shall make him emerge as a self-actualized, fully productive, and responsible member of society.</p>
+  </section>
+
+  <section class="container section">
+  <div class="text-center mb-5">
+    <h2>Leaders</h2>
+    <p class="text-muted">Meet the leaders guiding PCNL's academic excellence.</p>
+  </div>
+  <div class="row justify-content-center gy-4">
+    
+    <div class="col-6 col-sm-4 col-md-2">
+      <div class="card border-0 shadow-sm h-100 text-center">
+        <img src="presidentvicente.jpg" class="card-img-top rounded-circle mx-auto mt-3" style="width: 100px; height: 100px; object-fit: cover;" alt="President">
+        <div class="card-body">
+          <h6 class="card-title">President</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-sm-4 col-md-2">
+      <div class="card border-0 shadow-sm h-100 text-center">
+        <img src="BSBAdean.jpg" class="card-img-top rounded-circle mx-auto mt-3" style="width: 100px; height: 100px; object-fit: cover;" alt="BSBA Dean">
+        <div class="card-body">
+          <h6 class="card-title">BSBA Dean</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-sm-4 col-md-2">
+      <div class="card border-0 shadow-sm h-100 text-center">
+        <img src="BEEdean.jpg" class="card-img-top rounded-circle mx-auto mt-3" style="width: 100px; height: 100px; object-fit: cover;" alt="BEE Dean">
+        <div class="card-body">
+          <h6 class="card-title">BEE Dean</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-sm-4 col-md-2">
+      <div class="card border-0 shadow-sm h-100 text-center">
+        <img src="BSITdean.jpg" class="card-img-top rounded-circle mx-auto mt-3" style="width: 100px; height: 100px; object-fit: cover;" alt="BSIT Dean">
+        <div class="card-body">
+          <h6 class="card-title">BSIT Dean</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-sm-4 col-md-2">
+      <div class="card border-0 shadow-sm h-100 text-center">
+        <img src="maamjanet.jpg" class="card-img-top rounded-circle mx-auto mt-3" style="width: 100px; height: 100px; object-fit: cover;" alt="BSCRIM Dean">
+        <div class="card-body">
+          <h6 class="card-title">BSCRIM Dean</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-sm-4 col-md-2">
+      <div class="card border-0 shadow-sm h-100 text-center">
+        <img src="BSAdean.jpg" class="card-img-top rounded-circle mx-auto mt-3" style="width: 100px; height: 100px; object-fit: cover;" alt="BSA Dean">
+        <div class="card-body">
+          <h6 class="card-title">BSA Dean</h6>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+ 
+<section class="container section text-center">
+  <h2 class="fw-bold text-primary mb-3">Non-Teaching Staff</h2>
+  <p class="text-muted mb-4">The dedicated team working behind the scenes to support our students and faculty.</p>
+  <img src="nonteaching1.png" alt="Non-Teaching Staff Group Photo" class="img-fluid rounded shadow" style="max-width: 100%; height: auto;" />
+</section>
+
+
+  <footer class="footer">
+    <a href="https://www.facebook.com/PCNLOFFICIAL" target="_blank" class="text-white text-decoration-none fs-5">
+      <i class="bi bi-facebook me-2"></i>
+    </a>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

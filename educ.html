@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Education Department</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding-top: 70px;
+    }
+
+    .navbar-brand img {
+      height: 50px;
+      width: auto;
+    }
+
+    .navbar-custom .navbar-brand {
+      color: #ffffff;
+      background-color: blue;
+      font-weight: 700;
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .department-header {
+      background: linear-gradient(135deg,blue, #383d66);
+      color: white;
+      padding: 40px 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(4, 20, 165, 0.4);
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .department-header h1 {
+      font-weight: 700;
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+      letter-spacing: 1px;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+      
+    }
+
+    .department-header p {
+      font-size: 1.15rem;
+      font-weight: 500;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.5;
+      opacity: 0.9;
+    }
+
+    .carousel-inner img {
+      height: 350px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .container-content {
+      max-width: 900px;
+      margin: 0 auto 50px auto;
+      padding: 0 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 10px;
+      background-color:rgb(13, 10, 192);
+      color: white;
+      font-size: 0.9rem;
+      box-shadow: 0 -3px 10px ygba(255, 0, 0, 0.4);
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    footer a:hover {
+      color: #040b66;
+    }
+
+    @media (max-width: 575.98px) {
+      .department-header h1 {
+        font-size: 2rem;
+      }
+
+      .department-header p {
+        font-size: 1rem;
+      }
+
+      .carousel-inner img {
+        height: 220px;
+      }
+    }
+
+    .custom-nav-link {
+      color: #ffffff !important;
+      font-weight: 500;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      position: relative;
+    }
+
+    .custom-nav-link:hover,
+    .custom-nav-link:focus {
+      background-color: blue(255, 255, 255, 0.1);
+      transform: translateY(-1px);
+      text-decoration: none;
+    }
+
+    .custom-nav-link::after {
+      content: '';
+      display: block;
+      width: 0%;
+      height: 2px;
+      background-color: #ffffff;
+      transition: width 0.3s ease;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    .custom-nav-link:hover::after {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark shadow" style="background-color:rgb(8, 4, 221);">
+    <div class="container px-3">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="educ.jpg" alt="School Logo" class="me-2 rounded-circle" />
+        <span class="fs-4 fw-semibold">Education</span>
+      </a>
+
+      <button
+        class="navbar-toggler ms-auto"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarLinks"
+        aria-controls="navbarLinks"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarLinks">
+        <ul class="navbar-nav ms-auto gap-2">
+          <li class="nav-item">
+            <a class="nav-link custom-nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-nav-link" href="course.html">Course</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container-content">
+    <section class="department-header">
+      <h1>Education Department</h1>
+      <p>
+        The Education Department at PCNL is dedicated to preparing future educators who are passionate,
+      skilled, and ready to inspire the next generation. Our program offers a strong foundation in teaching methods,
+      child and adolescent development, curriculum design, and classroom management.Through hands-on training and 
+      real-world teaching experiences, students gain the knowledge and confidence to succeed in today’s diverse 
+      learning environments. Whether you dream of becoming a teacher,school counselor, or educational leader, our department equips you with the tools to make a lasting 
+      impact in the lives of students and communities.
+
+      Join us and become a difference-maker in the world of education.
+      </p>
+    </section>
+
+    <div id="deptCarousel" class="carousel slide mb-5" data-bs-ride="carousel" data-bs-interval="4000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#deptCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#deptCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#deptCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner rounded-3 shadow">
+        <div class="carousel-item active">
+          <img
+            src="EDUC3.jpg"
+            class="d-block w-100"
+            alt="Department Slide 1"
+          />
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+            <p>"Teaching: the only profession where you steal supplies from home to bring to work."</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="EDUC2.jpg"
+            class="d-block w-100"
+            alt="Department Slide 2"
+          />
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+            <p>"Those who can, teach. Those who can’t, pass notes in the back."</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="EDUC1.jpg"
+            class="d-block w-100"
+            alt="Department Slide 3"
+          />
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+            <p>"Education is the key to unlocking the world, a passport to freedom."</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#deptCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#deptCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </main>
+
+  <footer>
+    <a href="https://www.facebook.com/groups/educdept.pcnl" target="_blank">
+      <i class="fab fa-facebook"></i>
+    </a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

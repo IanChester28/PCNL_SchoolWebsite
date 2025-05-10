@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PCNL Course</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+ 
+    body {
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .navbar {
+      background-color: #007bff;
+      border-bottom: 3px solid #0056b3;
+    }
+
+    .navbar-brand img {
+      height: 40px;
+    }
+
+    h2, h3 {
+      color: #004085;
+      font-weight: 700;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .course-section {
+      background-color: #ffffff;
+      padding: 30px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .course-section:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.2);
+    }
+
+    .course-section h3 {
+      font-size: 1.75rem;
+      color: #007bff;
+    }
+
+    .course-section p {
+      color: #555;
+      font-size: 1.125rem;
+      line-height: 1.6;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+      border-radius: 20px;
+      padding: 10px 30px;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+      border-color: #0056b3;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      font-size: 1rem;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    a.back-link {
+      color: yellow;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a.back-link:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      h2 {
+        font-size: 2rem;
+      }
+
+      .course-section h3 {
+        font-size: 1.5rem;
+      }
+
+      .course-section p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark px-4">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="PCNLlogo.jpg" alt="Logo" />
+      <span class="ms-2 fs-4 fw-bold">PCNL</span>
+    </a>
+  </nav>
+
+  <div class="container py-5">
+    <h2 class="text-center mb-5">Offered Courses</h2>
+
+    <div id="it" class="course-section">
+      <h3>Information Technology</h3>
+      <p>Focused on software development, networking, cybersecurity, and data science, the IT program prepares students for the digital future.</p>
+      <a href="InformationTechnology.html" class="btn btn-primary">Learn More</a>
+    </div>
+
+    <div id="accountancy" class="course-section">
+      <h3>Accountancy</h3>
+      <p>Designed to build strong financial, analytical, and auditing skills, our Accountancy program produces future-ready professionals in the finance world.</p>
+      <a href="BSA.html" class="btn btn-primary">Learn More</a>
+    </div>
+
+    <div id="business" class="course-section">
+      <h3>Business Administration</h3>
+      <p>Empowering students with entrepreneurial knowledge, leadership skills, and strategic management techniques for today’s dynamic business environment.</p>
+      <a href="BSBA.html" class="btn btn-primary">Learn More</a>
+    </div>
+
+    <div id="education" class="course-section">
+      <h3>Education</h3>
+      <p>Our Education program trains future teachers to inspire the next generation through innovative teaching methodologies and educational psychology.</p>
+      <a href="educ.html" class="btn btn-primary">Learn More</a>
+    </div>
+
+    <div id="criminology" class="course-section">
+      <h3>Criminology</h3>
+      <p>This program prepares students for careers in law enforcement, forensic science, and criminal justice with a solid foundation in criminological theory and practice.</p>
+      <a href="crim.html" class="btn btn-primary">Learn More</a>
+    </div>
+
+    <div class="text-center mt-4">
+      <a href="index.html" class="back-link">← Back to Home</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 PCNL All rights reserved
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
